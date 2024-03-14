@@ -13,9 +13,10 @@
     min-height: 700px;
     padding: 36px;
 }
+/* Heading title page size download print */
 .tdc_head_title_pagesize{
     display: flex;
-    gap: 28px;
+    gap: 24px;
 }
 .tdc_title{
     width: 50%;
@@ -36,25 +37,41 @@
 .tdc_print button{
  display: flex;
  align-items: center;
+ justify-content: center;
  gap: 8px;
- padding: 10px 16px;
+ padding: 10px 12px;
  background: #46B8DA;
  border-radius: 8px;
  outline: none;
  border: none;
 }
+.tdc_download_pdf{
+    width: 34%;
+}
+.tdc_print{
+    width: 16%;
+}
+.tdc_download_pdf button{
+    width: 100%;
+}
+.tdc_print button{
+    width: 100%;
+}
 .tdc_pagesize_download_print{
     display: flex;
     align-items: end;
     width: 50%;
-    gap: 28px;
+    gap: 24px;
+    justify-content: space-between;
 }
-
+/* --------- */
 .tdc_content{
     margin-top: 44px;
     display: flex;
     gap: 32px;
 }
+/* content left fields */
+
 .tdc_content_left_field{
     flex-grow: 1;
     display: flex;
@@ -87,53 +104,13 @@ input[type=range]::-webkit-slider-thumb {
     display: flex;
     justify-content: space-between;
     width: 60%;
+   
+}
+.range_number span{
+    margin-top: -6px;
     font-size: 14px;
 }
-.tdc_content_todo_checklist{
-    min-height: 800px;
-    flex-grow: 2;
-    text-align: center;
-    border: 2px solid #46B8DA;
-    padding: 32px 52px;
-    
-}
-.todo_checklist_title{
-    text-align: center;
-}
-.todo_checklist{
-    display: flex;
-    margin-bottom: 12px;
 
-}
-.checkbox_data{
-    border-bottom: 1px solid black;
-}
-
-.tdc_content_right_field{
-    flex-grow: .42;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.color-input {
-    padding: 0px;
-    border: none;
-    border-radius: 8px;
-    width: 40%;
-    height: 44px;
-}
-.color-input::-webkit-color-swatch-wrapper {
-    padding: 0;
-}
-.color-input::-webkit-color-swatch {
-    border: none;
-    border-radius: 5px;
-}
-.title_data_field div{
-    display: flex;
-    align-items: center;
-    gap: 8px;margin-bottom: 6px;
-}
 .checkbox_type_retang_1{
     width: 42px;
     height: 42px;
@@ -160,4 +137,72 @@ input[type=range]::-webkit-slider-thumb {
     align-items: center;
     gap: 16px;
     margin: 8px 0;
+}
+
+/* to do checklist */
+
+.tdc_content_todo_checklist{
+    min-height: 700px;
+    flex-grow: 2;
+    text-align: center;
+    border: 2px solid #46B8DA;
+    padding: 32px 52px;
+    
+}
+.todo_checklist_title{
+    text-align: center;
+}
+.todo_checklist{
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.todo_checklist_title{
+    margin-bottom: 28px; 
+}
+.todo_checklist input[type='checkbox']{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    margin-bottom: 4px;
+    
+}
+.checkbox_data{
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.todo_checklist_footer_text{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* centent right field */
+.tdc_content_right_field{
+    flex-grow: .42;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title_data_field input[type='color']{
+    padding: 0px;
+    border: none;
+    border-radius: 8px;
+    width: 40%;
+    height: 44px;
+}
+.title_data_field input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+.title_data_field input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+}
+.title_data_field div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
 }
